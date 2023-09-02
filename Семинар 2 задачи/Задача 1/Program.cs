@@ -21,20 +21,20 @@
 // число любой разрядности и удаляет вторую цифру слева 
 
 
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num / 100 == 0)
-    System.Console.WriteLine(num / 10);
-else
-{
-    while (num > 0)
-    {
-        num = num / 10;
-        digit = num % 10;
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num / 100 == 0)
+//     System.Console.WriteLine(num / 10);
+// else
+// {
+//     while (num > 0)
+//     {
+//         num = num / 10;
+//         digit = num % 10;
         
-    }
-    System.Console.WriteLine(num % 10);
-}
+//     }
+//     System.Console.WriteLine(num % 10);
+// }
 
 
 // int digit1 = num / 100;
