@@ -8,13 +8,20 @@ void Degree(int a, int b)
     int product = 1;
     for (int i = 0; i < b; i++)
     {
-        product = product * a;
+        product *= a;
     }
     System.Console.WriteLine($"Число {a} в степени {b} равно {product}");
 }
-
-System.Console.Write("Введите число A: ");
-int a = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Введите число B: ");
-int b = Convert.ToInt32(Console.ReadLine());
+int Input(string mess)
+{
+    System.Console.Write(mess);
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+// System.Console.Write("Введите число A: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Введите число B: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+int a = Input("Введите число A: ");
+int b = Input("Введите число B: ");
 Degree(a, b);
