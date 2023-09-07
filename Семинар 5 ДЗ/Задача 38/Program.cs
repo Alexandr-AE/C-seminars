@@ -1,7 +1,5 @@
 ﻿// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
-
-
 void DifferenceMaxMin(decimal[] array)
 {
     int minIndex = 0;
@@ -15,14 +13,12 @@ void DifferenceMaxMin(decimal[] array)
     }
     System.Console.WriteLine($"Разница между максимальным {array[maxIndex]} и минимальным {array[minIndex]} элементом массива равна {array[maxIndex] - array[minIndex]}");
 }
-
 int Input(string message)
 {
     System.Console.Write(message);
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
-
 void FillArray(decimal[] array, int min, int max)
 {
     decimal num;
@@ -32,7 +28,6 @@ void FillArray(decimal[] array, int min, int max)
         array[i] = Convert.ToDecimal(new Random().Next(min, max)) + Math.Round(num, 2);
     }
 }
-
 void PrintArray(decimal[] array)
 {
     System.Console.Write("[");
@@ -44,11 +39,9 @@ void PrintArray(decimal[] array)
     }
     System.Console.WriteLine("]");
 }
-
 int size = Input("Введите длину массива: ");
 int min = Input("Введите минимальное значение случайных чисел: ");
 int max = Input("Введите максимальное значение случайных чисел: ");
-
 decimal[] array = new decimal[size];
 FillArray(array, min, max);
 PrintArray(array);

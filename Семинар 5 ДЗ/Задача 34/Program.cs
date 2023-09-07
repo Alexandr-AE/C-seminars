@@ -8,13 +8,11 @@ int Input(string message)
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
-
 void FillArray(int[] array, int x, int y)
 {
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(x, y + 1);
 }
-
 void PrintArray(int[] array)
 {
     System.Console.Write("[");
@@ -26,7 +24,6 @@ void PrintArray(int[] array)
     }
     System.Console.WriteLine("]");
 }
-
 void NumberOfEven(int[] array)
 {
     int count = 0;

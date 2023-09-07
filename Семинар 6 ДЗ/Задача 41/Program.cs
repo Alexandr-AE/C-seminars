@@ -16,7 +16,6 @@ void FillArray(int[] array)
         array[i] = Input($"Введите {i + 1} число: ");
     }
 }
-
 void NumberPositive(int[] array)
 {
     int count = 0;
@@ -27,7 +26,6 @@ void NumberPositive(int[] array)
     }
     System.Console.WriteLine($"Количество чисел больше 0 -> {count}");
 }
-
 void PrintArray(int[] array)
 {
     System.Console.Write("[");
@@ -39,7 +37,6 @@ void PrintArray(int[] array)
     }
     System.Console.WriteLine("]");
 }
-
 int size = Input("Укажите количество вводимых чисел: ");
 int[] array = new int[size];
 FillArray(array);

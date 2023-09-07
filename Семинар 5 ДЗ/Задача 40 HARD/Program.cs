@@ -1,17 +1,12 @@
 ﻿// задача 40 - HARD необязательная. 
-// На вход программы подаются три целых положительных числа. 
-// Определить , является ли это сторонами треугольника. 
-// Если да, то вывести всю информацию по нему - площадь, периметр, 
-// значения углов треугольника в градусах, является ли он 
-// прямоугольным, равнобедренным, равносторонним.
-
+// На вход программы подаются три целых положительных числа. Определить , является ли это сторонами треугольника. 
+// Если да, то вывести всю информацию по нему - площадь, периметр, значения углов треугольника в градусах, является ли он прямоугольным, равнобедренным, равносторонним.
 int Input(string mess)
 {
     System.Console.Write(mess);
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
-
 bool ExsistTriangle(int a, int b, int c)
 {
     bool result = false;
@@ -19,25 +14,21 @@ bool ExsistTriangle(int a, int b, int c)
         result = true;
     return result;
 }
-
 void RightTriangle(int a, int b, int c)
 {
     if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == a * a + b * b)
         System.Console.WriteLine("Треугольник прямоугольный");
 }
-
 void IsoscelesTriangle(int a, int b, int c)
 {
     if (a == b || b == c || c == a)
         System.Console.WriteLine("Треугольник равнобедренный");
 }
-
 void EquilateralTriangle(int a, int b, int c)
 {
     if (a == b && b == c)
         System.Console.WriteLine("Треугольник равносторонний");
 }
-
 void TriangleAreaPerimeter(int x, int y, int z)
 {
     double a = Convert.ToDouble(x);
@@ -48,7 +39,6 @@ void TriangleAreaPerimeter(int x, int y, int z)
     System.Console.WriteLine($"Площадь треугольника равна {area:F2}");
     System.Console.WriteLine($"Периметр треугольника равен {(p * 2):F2}");
 }
-
 void TriangleAngles(int x, int y, int z)
 {
     double a = Convert.ToDouble(x);
